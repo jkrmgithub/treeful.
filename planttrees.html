@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" type="x-icon"
+        href="https://res.cloudinary.com/ddmvm52r0/image/upload/v1648834866/treeful./tree-emoji_rfye8t.png">
+    <title>treeful.</title>
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="container row center con-border">
+            <h1 class="logo"><a href="index.html" class="logo">treeful.</a></h1>
+            <div class="navbar-items">
+                <a href="planttrees.html">Plant Trees</a>
+                <a href="info.html">Info</a>
+            </div>
+        </div>
+    </section>
+    <div class="container center center-margin">
+        <form action="results.html" method="GET" class="row planttrees">
+        <div class="container column">
+            <h2>Plant Trees</h2>
+            <br>
+            <p>Country:</p>
+            <div class="input_group">
+                <div class="input_box">
+                    <select name="country" id="" required>
+                        <option value="" disabled selected>Please select a country</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Peru">Peru</option>
+                        <option value="UK">UK</option>
+                        <option value="Italy">Italy</option>
+                        <option value="France">France</option>
+                        <option value="UK">Kenya</option>
+                        <option value="UK">Zambia</option>
+                        <option value="UK">South Africa</option>
+                        <option value="UK">Madagascar</option>
+                        <option value="UK">Thailand</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="New Zealand">New Zealand</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <p>Type:</p>
+            <br>
+            <div class="input_group">
+                <div class="input_box">
+                    <div><input type="radio" name="type" id="weekly" required> Weekly</div>
+                    <div><input type="radio" name="type" id="monthly"> Monthly</div>
+                    <div><input type="radio" name="type" id="yearly"> Yearly</div>
+                    <div><input type="radio" name="type" id="onetime"> One-time Purchase</div>
+                </div>
+            </div>
+            <br>
+            <p>Dedicate:</p>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="dedicate" placeholder="To..." class="name">
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="from" placeholder="From..." class="name">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button type="reset" class="btn-2 planttrees-btn-1">RESET</button>
+            <button class="btn-2 planttrees-btn-1">PAY NOW</button>
+            <br>
+        </div>
+        <div class="container column">
+            <h2>Payment Method</h2>
+            <br>
+                <p>Account:</p>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Name on Card" required class="name">
+                    </div>
+                </div>
+                <br>
+                <p>Email:</p>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="email" placeholder="Email Address" required class="email">
+                    </div>
+                </div>
+                <br>
+                <p>Billing Address:</p>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Billing Address Line 1" required class="billing-address">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Billing Address Line 2" class="billing-address">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Billing Address Line 3" class="billing-address">
+                    </div>
+                </div>
+                <br>
+                <div class="input_group">
+                    <div class="input_box">
+                        <p>City:</p>
+                        <input type="text" placeholder="City" required class="city">
+                    </div>
+                </div>
+                <br>
+                <div class="input_group">
+                    <div class="input_box">
+                        <p>Post Code:</p>
+                        <input type="text" placeholder="Post Code" required class="postcode">
+                    </div>
+                </div>
+                <p>Date of Birth</p>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="date" required class="dob">
+                        <!-- <input type="text" placeholder="YYYY" class="yyyy">
+                        <input type="text" placeholder="MM" class="mm">
+                        <input type="text" placeholder="DD" class="dd"> -->
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button type="reset" class="btn-2 planttrees-btn-2">RESET</button>
+                <button class="btn-2 planttrees-btn-2">PAY NOW</button>
+        </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
